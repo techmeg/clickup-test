@@ -5,13 +5,14 @@
     --sct-space: 3rem;
     --clr-bg: #E5E5E5;
     --clr-purple: hsl(265, 68%, 65%);
-    --clr-light-purple: hsla(265, 68%, 65%, 1);
+    --clr-light-purple: hsla(265, 68%, 65%, 0.1);
     --clr-pink: hsl(324, 82%, 66%);
     --clr-med-pink: hsla(324, 82%, 66%, 0.15);
     --clr-light-pink: hsla(324, 82%, 66%, 0.1);
-    --clr-light-green: hsla(171, 47%, 60%, 1);
-    --clr-light-blue: hsla(202, 71%, 52%, 1);
+    --clr-light-green: hsla(171, 47%, 60%, 0.1);
+    --clr-light-blue: hsla(202, 71%, 52%, 0.1);
     --clr-body-text: hsla(202, 16%, 35%, 1);
+    --clr-white: #FFFFFF;
     ;
     --clr-header-text: #212353;
 
@@ -27,6 +28,7 @@
     --ff-text: "Avenir", sans-serif;
 
     --radius: 50px;
+    --sm-radius: 20px;
 
     @media(min-width: 860px){
         --fs-900: 5rem;
@@ -205,10 +207,20 @@ p {
     /* outline: 1px solid red; */
 }
 
+.inline {
+    display: inline;
+    margin-left: .5rem;
+}
+
+.purple {
+    background-color: var(--clr-purple);
+    color: var(--clr-white);
+}
+
 .container {
     padding-inline: var(--gap, 1rem);
     margin-inline: auto;
-    max-width: 70rem;
+    max-width: calc(1118px - 4rem);
     @media(min-width: 600px) {
         --gap: 2rem;
     }
@@ -232,7 +244,8 @@ p {
 section,
 .primary-header,
 .hero, 
-.features {
+.features,
+.testimonials{
     margin-bottom: var(--sct-space);
 }
 /*  Components  */
@@ -249,7 +262,7 @@ section,
 .purple-bubble {
     /* Rectangle 32 */
         background: #9C69E2;
-        border-radius: 20px;
+        border-radius: var(--sm-radius);
         margin-right: 9px;
         width: 20px;
         height: 20px;
@@ -321,11 +334,111 @@ section,
 }
 
 .card {
+    position: relative;
     @media(min-width: 860px){
         grid-template-columns: 1fr 1fr;
+        padding: 3.5rem 2rem .5rem 0 ;
 
     }
 }
+
+@media (min-width: 860px){
+    #card-one::after,
+    #card-two::after,
+    #card-three::after,
+    #card-four::after {
+        border-radius: 20px;
+        clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 25%;
+        background-color: var(--clr-light-green);
+        height: 100%;
+        width: 75%;
+    }
+    #card-two::after {
+        background-color: var(--clr-light-purple);
+    }
+    #card-three::after {
+        background-color: var(--clr-light-pink);
+    }
+    #card-four::after {
+        background-color: var(--clr-light-blue);
+    }
+}
+.testimonials {
+    background-color: var(--clr-purple);
+    border-radius: var(--radius);
+    padding: 3rem 1rem 0;
+    @media(min-width: 860px){
+        padding: 5rem 0 3rem 8%;
+    }
+}
+
+.testimonials h3 {
+    color: var(--clr-white);
+    margin-bottom: var(--sct-space);
+}
+
+.testimonial__slider {
+    display: block;
+    position: relative;
+    height: 500px;
+    width: 80vw;
+    overflow: hidden;
+    @media(min-width: 860px) {
+        height: 330px;
+    }
+}
+
+.testimonial__card {
+    position: absolute;
+    background-color: var(--clr-white);
+    border: 1px solid #9C69E2;
+    border-radius: var(--sm-radius);
+    color: var(--clr-body-text);
+    width: 100%;
+    max-width: 645px;
+    padding: 3rem;
+    @media(min-width: 860px){
+        grid-template-columns: 90px 1fr;
+        width: 75%;
+
+    }
+}
+
+#card-fades {
+    background: linear-gradient(270deg, #9C69E2 9.75%, rgba(255, 255, 255, 0) 100%);
+}
+.testimonial__avatar {
+    aspect-ratio: 1;
+    background-color: #cccccc;
+    border-radius: 50%;
+    width: 90px;
+}
+
+.slider__controls {
+    justify-content: space-between;
+}
+
+.slider__control-dots {
+
+}
+
+.dot {
+    background-color: var(--clr-white);
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin-right: 5px;
+    width: 10px;
+}
+
+.dot.active {
+    background-color: var(--clr-pink);
+}
+
 
 .social {
     & ul {

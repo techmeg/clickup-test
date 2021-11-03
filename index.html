@@ -21,7 +21,10 @@
                 <li> <a href="#">Signup</a></li>
             </ul>
         </nav>
-        <button class="demo btn"><a href="#" >Request Demo &xrarr;</a></button>
+        <button class="demo btn">
+            <a href="#" >Request Demo</a> 
+            <img class="inline" src="images/icons/right-arrow.png">
+        </button>
     </header>
 
     <main class="main">
@@ -37,10 +40,10 @@
             </div>
             <div class="intro grid">
                 <div class="intro__text flow">
-                    <h3 class="fs-800">We are a high-level
+                    <h2 class="fs-800">We are a high-level
                         data 
                         storage bank
-                    </h3>
+                    </h2>
                     <p class="fs-500 lh-8">The place to store various data that you can access at any time through the internet  and where you can carry it. 
                         This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse.
                     </p>
@@ -51,49 +54,53 @@
         </section>
         <section id="features ">
             <header class="features flow">
-                <h2 class="fs-800">Features</h2>
+                <h3 class="fs-800">Features</h3>
                 <p>Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.
                 </p>
             </header>
             <div class="feature-cards grid">
-                <div class="card grid">
+                <div id="card-one" class="card grid ">
                     <img src="images/image3-1.png" alt="" class="card__img">
-                    <div class="card__text">
-                        <h3 class="fs-700">Search Data</h3>
+                    <div class="card__text flow">
+                        <h4 class="fs-700">Search Data</h4>
                         <p class="">Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.</p>
-                        <a href="#" class="card__link">Learn More <span>&xrarr;</span></a>
+                        <a href="#" class="card__link">Learn More <span><img class="inline" src="images/icons/right-arrow.png">
+                        </span></a>
                     </div>
 
                 </div>
-                <div class="card grid">
+                <div id="card-two" class="card grid">
                     <img src="images/image4.png" alt="" class="card__img">
-                    <div class="card__text">
-                        <h3 class="fs-700">24 Hours Access</h3>
+                    <div class="card__text flow">
+                        <h4 class="fs-700">24 Hours Access</h4>
                         <p class="">Access is given 24 hours a full morning to night and
                             meet again in the morning, giving you comfort when
                             you need data when urgent.</p>
-                        <a href="#" class="card__link">Learn More <span>&xrarr;</span></a>
+                        <a href="#" class="card__link">Learn More <span><img class="inline" src="images/icons/right-arrow.png">
+                        </span></a>
                     </div>
 
                 </div>
-                <div class="card grid">
+                <div id="card-three" class="card grid">
                     <img src="images/image5-1.png" alt="" class="card__img">
-                    <div class="card__text">
-                        <h3 class="fs-700">Print Out</h3>
+                    <div class="card__text flow">
+                        <h4 class="fs-700">Print Out</h4>
                         <p class="">Print out service gives you convenience if someday
                             you need print data, just edit it all and just print it.</p>
-                        <a href="#" class="card__link">Learn More <span>&xrarr;</span></a>
+                        <a href="#" class="card__link">Learn More <span><img class="inline" src="images/icons/right-arrow.png">
+                        </span></a>
                     </div>
 
                 </div>
-                <div class="card grid">
+                <div id="card-four" class="card grid">
                     <img src="images/image6-1.png" alt="" class="card__img">
-                    <div class="card__text">
-                        <h3 class="fs-700">Security Code</h3>
+                    <div class="card__text flow">
+                        <h4 class="fs-700">Security Code</h4>
                         <p class="card__text">Data Security is one of our best facilities. Allows for your files
                             to be safer. The file can be secured with a code or password that 
                             you created, so only you can open the file.</p>
-                        <a href="#" class="card__link">Learn More <span>&xrarr;</span></a>
+                        <a href="#" class="card__link">Learn More <span><img class="inline" src="images/icons/right-arrow.png">
+                        </span></a>
                     </div>
 
                 </div>
@@ -103,28 +110,38 @@
 
         <section class="testimonials">
             <header>
-                <h2 class="fs-800">Testimonials</h2> </header>
+                <h3 class="fs-800">Testimonials</h3> </header>
             <div class="testimonial__slider">
-                <div class="testimonial__card">
-                    <div class="grid">
-                       <img src="" alt="" class="testimonial__avatar"> 
-                       <div class="testimonial__card-info">
-                           <p class="fs-500">John Fang </p>
-                           <p class="fs-300">wordfang.com</p>
-                           <p class="testimonia__text">Suspendisse ultrices at diam lectus nullam. 
-                            Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
-                       </div>
+                <div class="testimonial__card grid">
+                    <img src="" alt="" class="testimonial__avatar"> 
+                    <div class="testimonial__card-info flow">
+                        <div>
+                        <p class="fs-500">John Fang </p>
+                        <p class="fs-300">wordfang.com</p>
+                        </div>
+                        <p class="testimonia__text">Suspendisse ultrices at diam lectus nullam. 
+                        Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
                     </div>
                 </div>
-                <div class="testimonial__card">
-                    <div class="grid">
-                       <img src="" alt="" class="testimonial__avatar">
-                       <div class="testimonial__card-info"> 
+                <!-- <div id="card-fades" class="testimonial__card grid">
+                    <img src="" alt="" class="testimonial__avatar">
+                    <div class="testimonial__card-info"> 
                         <p class="fs-500">Jeny Doe</p>
                         <p class="fs-300 testimonial__job">UX Engineer</p>
                         <p class="testimonia__text">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor</p>
-                        </div>
                     </div>
+                </div> -->
+            </div>
+            <div class="slider__controls flex">
+                <div class="slider__control-dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="slider__control-arrows">
+                    <img class="inline" src="images/icons/left-arrow.png">
+                    <img class="inline" src="images/icons/right-arrow.png">
                 </div>
             </div>
             <footer class="testimonial__footer"></footer>
@@ -132,7 +149,7 @@
 
         <section class="cta">
             <header>
-                <h2 class="fs-800">Try for free!</h2>
+                <h3 class="fs-800">Try for free!</h3>
                 <p>Get limited 1 week free try our features!</p>
             </header>
             <div>
@@ -158,7 +175,7 @@
                 </ul>
             </div>
             <div class="footer__list">
-                <h4 class="footer_list-title">Help</h4>
+                <h5 class="footer_list-title">Help</h5>
                 <ul >
                     <li><a href="#">Support</a></li>
                     <li><a href="#">Sign Up</a></li>
