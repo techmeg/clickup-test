@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="container">
-    <header class="primary-header flex">
-        <div class="logo">
-            <div class="purple-bubble"></div>
-            <div class="pink-bubble"></div>
+    <header class="primary-header">
+        <div class="flex">
+            <div class="logo">
+                <div class="purple-bubble"></div>
+                <div class="pink-bubble"></div>
+            </div>
+            <span class="fs-600 mobile-only">Data Warehouse</span>
         </div>
+
         <nav class="nav">
             <ul class="flex">
                 <li> <a href="#">About</a></li>
@@ -21,7 +25,7 @@
                 <li> <a href="#">Signup</a></li>
             </ul>
         </nav>
-        <button class="demo btn">
+        <button class="demo1 btn">
             <a href="#" >Request Demo</a> 
             <img class="inline" src="images/icons/right-arrow.png">
         </button>
@@ -30,7 +34,7 @@
     <main class="main">
         <section>
             <div class="hero flow">
-                <h1 class="ff-header fs-900" >Save your data here.</h1>
+                <h1 class="ff-header fs-900" >Save your data storage here.</h1>
                 <img src="images/image1-1.png" alt="" class="hero__img">
                 <p class="fs-500 lh-8">Data Warehouse is a data storage area that has been
                     tested for security, so you can store your data here
@@ -54,14 +58,14 @@
         </section>
         <section id="features ">
             <header class="features flow">
-                <h3 class="fs-800">Features</h3>
+                <h3 class="fs-800 lh-8">Features</h3>
                 <p>Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.
                 </p>
             </header>
             <div class="feature-cards grid">
                 <div id="card-one" class="card grid ">
                     <img src="images/image3-1.png" alt="" class="card__img">
-                    <div class="card__text flow">
+                    <div class="card__text grid">
                         <h4 class="fs-700">Search Data</h4>
                         <p class="">Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.</p>
                         <a href="#" class="card__link">Learn More <span><img class="inline" src="images/icons/right-arrow.png">
@@ -71,7 +75,7 @@
                 </div>
                 <div id="card-two" class="card grid">
                     <img src="images/image4.png" alt="" class="card__img">
-                    <div class="card__text flow">
+                    <div class="card__text grid">
                         <h4 class="fs-700">24 Hours Access</h4>
                         <p class="">Access is given 24 hours a full morning to night and
                             meet again in the morning, giving you comfort when
@@ -83,7 +87,7 @@
                 </div>
                 <div id="card-three" class="card grid">
                     <img src="images/image5-1.png" alt="" class="card__img">
-                    <div class="card__text flow">
+                    <div class="card__text grid">
                         <h4 class="fs-700">Print Out</h4>
                         <p class="">Print out service gives you convenience if someday
                             you need print data, just edit it all and just print it.</p>
@@ -94,7 +98,7 @@
                 </div>
                 <div id="card-four" class="card grid">
                     <img src="images/image6-1.png" alt="" class="card__img">
-                    <div class="card__text flow">
+                    <div class="card__text grid">
                         <h4 class="fs-700">Security Code</h4>
                         <p class="card__text">Data Security is one of our best facilities. Allows for your files
                             to be safer. The file can be secured with a code or password that 
@@ -119,7 +123,7 @@
                         <p class="fs-500">John Fang </p>
                         <p class="fs-300">wordfang.com</p>
                         </div>
-                        <p class="testimonia__text">Suspendisse ultrices at diam lectus nullam. 
+                        <p class="testimonial__text">Suspendisse ultrices at diam lectus nullam. 
                         Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
                     </div>
                 </div>
@@ -147,26 +151,37 @@
             <footer class="testimonial__footer"></footer>
         </section>
 
-        <section class="cta">
+        <section class="cta flex">
             <header>
                 <h3 class="fs-800">Try for free!</h3>
                 <p>Get limited 1 week free try our features!</p>
             </header>
             <div>
-                <button class="pink btn"></button>
-                <button class="btn"><a href="#" >Request Demo &xrarr;</a></button>
+                <button class="pink btn">Learn More</button>
+                <button class="btn demo2">
+                    <a href="#" >Request Demo </a>
+                    <img class="inline" src="images/icons/right-arrow.png">
+                </button>
             </div>
         </section>
-        <footer class="primary_footer">
+        <footer class="primary-footer grid">
             <div class="footer__info">
-                <div class="footer__info-title">
-                    <div class="purple-bubble"></div>
-                    <div class="pink-bubble"></div>
+                <div class="footer__info-title flex">
+                    <div class="logo">
+                        <div class="purple-bubble"></div>
+                        <div class="pink-bubble"></div>
+                    </div>
                     <span class="fs-600">Data Warehouse</span>
                 </div>
+                <p class="footer__info-address">Warehouse Society, 234<br>
+                   Bahagia Ave Street PRBW 29281
+                </p>
+                <p>info@warehouse.project<br>
+                    1-232-3434 (Main)
+                </p>
             </div>
-            <div class="footer__list">
-                <h4 class="footer_list-title">About</h4>
+            <div class="footer__list1">
+                <h4 class="footer__list-title">About</h4>
                 <ul >
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Features</a></li>
@@ -174,8 +189,8 @@
                     <li><a href="#">DW News</a></li>
                 </ul>
             </div>
-            <div class="footer__list">
-                <h5 class="footer_list-title">Help</h5>
+            <div class="footer__list2">
+                <h5 class="footer__list-title">Help</h5>
                 <ul >
                     <li><a href="#">Support</a></li>
                     <li><a href="#">Sign Up</a></li>
