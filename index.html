@@ -9,30 +9,31 @@
 </head>
 <body >
     <a class="skip-to-content" href="#main">Skip to content</a>
-    <header class="primary-header lm-var container">
-        <div class="flex">
-            <div class="logo" tab-index=0>
-                <a href="#" class="sr-only">Home</a>
-                <div class="purple-bubble"></div>
-                <div class="pink-bubble"></div>
+    <div class="lm-var rm-var container">
+        <header class="primary-header">
+            <div class="flex">
+                <div class="logo" tab-index=0>
+                    <a href="#" class="sr-only">Home</a>
+                    <div class="purple-bubble"></div>
+                    <div class="pink-bubble"></div>
+                </div>
+                <!-- <span class="fs-600 mobile-only">Data Warehouse</span> -->
             </div>
-            <span class="fs-600 mobile-only">Data Warehouse</span>
-        </div>
 
-        <nav class="nav">
-            <ul class="flex">
-                <li class="nav__list-item"> <a href="#">Help</a></li>
-                <li class="nav__list-item"> <a href="#">About</a></li>
-                <li class="nav__list-item"> <a href="#">Features</a></li>
-                <li class="nav__list-item"> <a href="#">Signup</a></li>
-            </ul>
-        </nav>
-        <button class="demo1 btn">
-            Request Demo
-            <img class="inline" src="images/icons/right-arrow.png">
-        </button>
-    </header>
-
+            <nav class="nav">
+                <ul class="flex">
+                    <li class="nav__list-item"> <a href="#">Help</a></li>
+                    <li class="nav__list-item"> <a href="#">About</a></li>
+                    <li class="nav__list-item"> <a href="#">Features</a></li>
+                    <li class="nav__list-item"> <a href="#">Signup</a></li>
+                </ul>
+            </nav>
+            <button class="demo1 btn">
+                Request Demo
+                <img class="inline" src="images/icons/right-arrow.png" role="presentation">
+            </button>
+        </header>
+    </div>  
     <main id="main">  
           
             <section>
@@ -45,7 +46,7 @@
                     </p>
                     <button class="btn purple">Learn More</button>
                 </div>
-                <div class="intro grid lm-var container">
+                <div class="intro grid lm-var rm-var container">
                     <div class="intro__text flow">
                         <h2 class="fs-800">We are a high-level
                             data 
@@ -59,7 +60,7 @@
                 </div>
             </section>
 
-            <section id="features" class="lm-var container">
+            <section id="features" class="lm-var rm-var container">
                 <header class="features flow">
                     <h3 class="fs-800 lh-8">Features</h3>
                     <p>Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.
@@ -71,7 +72,7 @@
                         <div class="card__text grid">
                             <h4 class="fs-700">Search Data</h4>
                             <p class="">Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.</p>
-                            <a href="#" class="card__link">Learn More <span><img class="inline" src="images/icons/right-arrow.png">
+                            <a href="#" class="card__link">Learn More <span><img class="inline" src="images/icons/right-arrow.png" role="presentation">
                             </span></a>
                         </div>
 
@@ -83,7 +84,7 @@
                             <p class="">Access is given 24 hours a full morning to night and
                                 meet again in the morning, giving you comfort when
                                 you need data when urgent.</p>
-                            <a href="https://css-tricks.com/a-complete-guide-to-links-and-buttons/" class="card__link">Learn More <span><img class="inline" src="images/icons/right-arrow.png">
+                            <a href="https://css-tricks.com/a-complete-guide-to-links-and-buttons/" class="card__link">Learn More <span><img class="inline" src="images/icons/right-arrow.png" role="presentation">
                             </span></a>
                         </div>
 
@@ -94,7 +95,7 @@
                             <h4 class="fs-700">Print Out</h4>
                             <p class="">Print out service gives you convenience if someday
                                 you need print data, just edit it all and just print it.</p>
-                            <a href="#" class="card__link">Learn More <span><img class="inline" src="images/icons/right-arrow.png">
+                            <a href="#" class="card__link">Learn More <span><img class="inline" src="images/icons/right-arrow.png" role="presentation">
                             </span></a>
                         </div>
 
@@ -107,7 +108,7 @@
                                 to be safer. The file can be secured with a code or password that 
                                 you created, so only you can open the file.</p>
                             <div>
-                                <a href="#" class="card__link">Learn More</a> <span><img class="inline" src="images/icons/right-arrow.png">
+                                <a href="#" class="card__link">Learn More</a> <span><img class="inline" src="images/icons/right-arrow.png" role="presentation">
                                 </span>
                             </div>
 
@@ -118,54 +119,58 @@
 
             </section>
 
-            <section class="testimonials grid lm-var container">
+            <section class="testimonials grid lm-var rm-var container">
                 <header>
                     <h3 class="fs-800">Testimonials</h3> </header>
                 <div class="testimonial__slider">
                     <ul class="slider-container">
-                        <div class="testimonial__card grid">
-                            <img src="" alt="" class="testimonial__avatar"> 
-                            <div class="testimonial__card-info flow">
-                                <div>
-                                <p class="testimonial__name fs-500">John Fang </p>
-                                <p class="testimonial__job fs-300">wordfang.com</p>
+                         <li>
+                            <div class="testimonial__card grid">
+                                <img src="" alt="" class="testimonial__avatar"> 
+                                <div class="testimonial__card-info flow">
+                                    <div>
+                                    <p class="testimonial__name fs-500">John Fang </p>
+                                    <p class="testimonial__job fs-300">wordfang.com</p>
+                                    </div>
+                                    <p class="testimonial__text fs-500">Suspendisse ultrices at diam lectus nullam. 
+                                    Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
                                 </div>
-                                <p class="testimonial__text fs-500">Suspendisse ultrices at diam lectus nullam. 
-                                Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
                             </div>
-                        </div>
-                        <div id="card-fades" class="testimonial__card grid">
-                            <img src="" alt="" class="testimonial__avatar">
-                            <div class="testimonial__card-info"> 
-                                <p class="fs-500">Jeny Doe</p>
-                                <p class="fs-300 testimonial__job">UX Engineer</p>
-                                <p class="testimonia__text">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor</p>
+                        </li>
+                        <li>
+                            <div id="card-fades" class="testimonial__card grid">
+                                <img src="" alt="" class="testimonial__avatar">
+                                <div class="testimonial__card-info"> 
+                                    <p class="fs-500">Jeny Doe</p>
+                                    <p class="fs-300 testimonial__job">UX Engineer</p>
+                                    <p class="testimonia__text">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor</p>
+                                </div>
                             </div>
-                        </div>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="testimonial__slider-controls">
                     <div class="slider__controls flex">
                         <div class="slider__control-dots">
-                            <button class="dot active"></button>
-                            <button class="dot"></button>
-                            <button class="dot"></button>
-                            <button class="dot"></button>
+                            <div role="presentation" class="dot active"></div>
+                            <div role="presentation" class="dot"></div>
+                            <div role="presentation" class="dot"></div>
+                            <div role="presentation" class="dot"></div>
                         </div>
                         <div class="slider__control-arrows">
                             <button class="slider__control-arrow">
-                                <img class="inline" src="images/icons/left-arrow.png"><span class="sr-only">Previous</span>
+                                <img class="inline" src="images/icons/left-arrow.png" role="presentation"><span class="sr-only">Previous</span>
                             </button>
                             <button class="slider__control-arrow"><span class="sr-only">Previous</span>
-                                <img class="inline" src="images/icons/right-arrow.svg">
+                                <img class="inline" src="images/icons/right-arrow.svg" role="presentation">
                             </button>
                         </div>
                     </div>
             </section>
         </div>
         <hr>
-        <div class="lm-var container">
+        <div class="lm-var rm-var container">
             <section class="cta flex">
                 <header>
                     <h3 class="fs-800">Try for free!</h3>
@@ -174,8 +179,8 @@
                 <div>
                     <button class="pink btn">Learn More</button>
                     <button class="btn demo2">
-                        <a href="#" >Request Demo </a>
-                        <img class="inline" src="images/icons/right-arrow.png">
+                        Request Demo
+                        <img class="inline" src="images/icons/right-arrow.png" role="presentation">
                     </button>
                 </div>
             </section>
@@ -217,9 +222,9 @@
                 <div class="social">
                     <h5 class="fs-400">Social Media</h5>
                     <ul class="social__list">
-                        <li class="social_list-item"><a href="#"><img src="images/icons/facebook.svg" alt="facebook"></a></li>
-                        <li class="social_list-item"><a href="#"><img src="images/icons/twitter.svg" alt="twitter"></a></li>
-                        <li class="social_list-item"><a href="#"><img src="images/icons/instagram.svg" alt="instagram"></a></li>
+                        <li><a class="social__link" href="#"><img src="images/icons/facebook.svg" alt="facebook"></a></li>
+                        <li><a class="social__link" href="#"><img src="images/icons/twitter.svg" alt="twitter"></a></li>
+                        <li><a class="social__link" href="#"><img src="images/icons/instagram.svg" alt="instagram"></a></li>
                     </ul>
                 </div>
             </footer>
