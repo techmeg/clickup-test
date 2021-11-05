@@ -84,14 +84,7 @@ p {
 html {
     background-color: var(--clr-bg);
 }
-body {
-    color: hsl(var(--clr-body-text));
-    font-family: var(--ff-text);
-    font-size: var(--fs-400);
-    line-height: 1.6;
-    min-height: 100vh;
-    // overflow: hidden;
-}
+
 
 /*  image reset */
 
@@ -200,17 +193,18 @@ p {
 
 
 .container {
+    display: grid;
+    place-content: center;
+    margin-right: clamp(2rem, 10vw, 15rem);
+    max-width: 1182px;
     padding-inline: var(--gap, 1rem);
-    margin-inline: auto;
     @media(min-width: 600px) {
         --gap: 2rem;
     }
 }
 
-.inner-body {
-    margin-inline: clamp(2rem, 10vw, 15rem);
-    max-width: 1182px;
-    margin: auto;
+.lm-var {
+    margin-left: clamp(2rem, 10vw, 15rem);
 }
 
 .skip-to-content {
@@ -286,8 +280,18 @@ section,
 /* ------------------------------------ */
 /*   Layout   */
 /* ------------------------------------ */
-/* Primary Nav */
 
+body {
+    color: hsl(var(--clr-body-text));
+    font-family: var(--ff-text);
+    font-size: var(--fs-400);
+    line-height: 1.6;
+    max-width: 1600px;
+    min-height: 100vh;
+
+}
+
+/* Primary Nav */
 
 .logo{
     display: flex;
@@ -359,7 +363,7 @@ section,
 }
 
 .demo2 {
-    @media(max-width: 420px){
+    @media(max-width: 410px){
         display: block;
         margin: 2rem 0 0;
     }
@@ -376,16 +380,23 @@ section,
 }
 
 .hero {
-    @media(min-width: 1020px){
+    margin-right: clamp(2rem, 10vw, 15rem);
+    max-width: 1265px;
+    @media(min-width: 1240px){
         padding-top: 2rem;
-        margin-bottom: calc(var(--sct-space) + 10rem); //compensate visual placement
+        margin-right: 7.75rem;
+        margin-bottom: calc(var(--sct-space) + 6.25rem); //compensate visual placement
         position: relative;
+        padding-inline: var(--gap, 1rem);
+        @media(min-width: 600px) {
+            --gap: 2rem;
+        }
         h1{
             margin-bottom: 4rem;
-            width: 60%;
+            width:60%;
         }
         p {
-            width: 33%;
+            width: 35%;
         }
     }
 }
@@ -393,20 +404,21 @@ section,
 .hero::after {
     content: '';
     background-image: url('images/image1-1.png');
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 100%;
     position: absolute;
-    bottom: -10rem;;
-    left: 30%;
-    height: 110%;
-    width: 100%;
-    @media(max-width: 1019px){
+    bottom: -6.25rem;
+    left: 33%;
+    height: 96%;
+    width: 70%;
+    @media(max-width: 1239px){
         display: none;
     }
 }
 
 .hero__img {
-    @media(min-width: 1020px){
+    @media(min-width: 1240px){
         display: none;
     }
 }
@@ -665,9 +677,11 @@ hr {
 }
 
 .primary-footer {
+    display: grid;
     grid-template-columns: 1fr 1fr;;
     @media(min-width: 860px){
-        grid-template-columns: 40% 17.5% 17.5% 25%;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
